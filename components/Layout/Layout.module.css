@@ -36,6 +36,7 @@
 @media only screen and (max-width: 800px) {
   .Container {
     padding: 4rem 0 0 0;
+    margin-bottom: 3rem;
   }
 
   .Header {
