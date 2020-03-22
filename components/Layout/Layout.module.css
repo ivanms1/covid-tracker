@@ -1,0 +1,42 @@
+.Container {
+  padding: 4rem 5rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 55%;
+}
+
+.DoctorIcon {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.Title {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .Container {
+    padding: 4rem 0 0 0;
+  }
+
+  .Header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .DoctorIcon {
+    margin-bottom: 1rem;
+  }
+
+  .Title {
+    font-size: 1.8rem;
+  }
+}

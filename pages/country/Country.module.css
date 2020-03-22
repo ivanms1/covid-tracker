@@ -1,0 +1,11 @@
+.Select {
+  min-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.ChartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
