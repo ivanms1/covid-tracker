@@ -15,6 +15,9 @@ const Layout = ({ children, showHeader = true }) => {
         </div>
       )}
       {children}
+      <p className={styles.Credit}>
+        Made by <a href='https://github.com/ivanms1'>Ivan</a>
+      </p>
     </div>
   );
 };

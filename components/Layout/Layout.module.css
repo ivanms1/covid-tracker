@@ -23,6 +23,16 @@
   font-size: 3rem;
 }
 
+.Credit {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 @media only screen and (max-width: 800px) {
   .Container {
     padding: 4rem 0 0 0;
