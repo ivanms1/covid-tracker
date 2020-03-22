@@ -14,3 +14,11 @@ export const getBarColor = name => {
   if (name === 'Recovered') return '#21bf73';
   return '#00000';
 };
+
+export const getWindowDimensions = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+};

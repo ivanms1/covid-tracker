@@ -1,13 +1,5 @@
 import { useState, useEffect } from 'react';
-
-function getWindowDimensions() {
-  const { innerWidth: width = 800, innerHeight: height = 600 } =
-    typeof window !== 'undefined' ? window : {};
-  return {
-    width,
-    height
-  };
-}
+import { getWindowDimensions } from '../helpers';
 
 export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(

@@ -35,10 +35,8 @@ const Country = () => {
         onChange={e => setSelectedCountry(e)}
       />
       <div className={styles.ChartContainer}>
-        {selectedCountry && data && !data.error && (
-          <React.Fragment>
-            <BarChart data={data} />
-          </React.Fragment>
+        {selectedCountry && data && !data.error && process.browser && (
+          <BarChart data={data} />
         )}
         {selectedCountry && !data && <h3>Loading...</h3>}
         {!selectedCountry && <h3>Please Select a Country</h3>}

@@ -32,7 +32,7 @@ const BarChart = ({ data }) => {
       <YAxis />
       <Bar dataKey='value' label={<CustomBarLabel />}>
         {formattedData.map(entry => (
-          <Cell fill={getBarColor(entry.name)} />
+          <Cell key={entry.name} fill={getBarColor(entry.name)} />
         ))}
       </Bar>
     </LibBarChart>

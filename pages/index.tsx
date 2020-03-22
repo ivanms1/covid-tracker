@@ -9,7 +9,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <h2 className={styles.Title}>Worldwide</h2>
-      <BarChart data={data} />
+      {process.browser && <BarChart data={data} />}
     </Layout>
   );
 };
