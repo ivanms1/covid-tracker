@@ -11,10 +11,12 @@ const Layout = ({ children, showHeader = true }) => {
       {showHeader && (
         <div className={styles.Header}>
           <img className={styles.DoctorIcon} src={doctor} alt='doctor' />
-          <h1 className={styles.Title}>COVID-19 Tracker</h1>
-          <p className={styles.Credit}>
-            Made by <a href='https://github.com/ivanms1'>Ivan</a>
-          </p>
+          <div className={styles.Title}>
+            <h1>COVID-19 Tracker</h1>
+            <p className={styles.Credit}>
+              Made by <a href='https://github.com/ivanms1'>Ivan</a>
+            </p>
+          </div>
         </div>
       )}
       {children}
