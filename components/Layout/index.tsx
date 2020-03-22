@@ -12,12 +12,12 @@ const Layout = ({ children, showHeader = true }) => {
         <div className={styles.Header}>
           <img className={styles.DoctorIcon} src={doctor} alt='doctor' />
           <h1 className={styles.Title}>COVID-19 Tracker</h1>
+          <p className={styles.Credit}>
+            Made by <a href='https://github.com/ivanms1'>Ivan</a>
+          </p>
         </div>
       )}
       {children}
-      <p className={styles.Credit}>
-        Made by <a href='https://github.com/ivanms1'>Ivan</a>
-      </p>
     </div>
   );
 };

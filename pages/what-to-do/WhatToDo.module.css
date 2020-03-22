@@ -25,6 +25,7 @@
 @media only screen and (max-width: 800px) {
   .Container {
     padding-top: 0rem;
+    margin-bottom: 1rem;
     flex-direction: column;
   }
 }
